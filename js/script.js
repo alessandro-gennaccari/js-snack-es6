@@ -15,9 +15,9 @@ do {
 const successivo = numero + 1;
 // Controllo se il numero è pari;
 if (numero % 2 == 0) {
-    console.log('Il numero è pari: ' + numero);
+    document.getElementById('pari').innerHTML = 'Il numero ' + numero + ' è pari.';
 } else {
-    console.log('Il numero non è pari il succesivo è: ' + successivo);
+    document.getElementById('successivo').innerHTML = 'Il numero non è pari ed il succesivo è: ' + successivo;
 }
 
 //---------------------------------------------------------------------------------------------------
@@ -41,6 +41,8 @@ for (let i = 0; i < 10; i++){
     let number = randomNumber(1,100);
     if (!array.includes(number)){
         array.push(number)
+    } else {
+        i--;
     }
 }
 console.log(array);
@@ -73,5 +75,26 @@ Verificare se le due parole hanno la stessa lunghezza.
 Se hanno la stessa lunghezza, stamparle entrambe altrimenti,
 stampare la più lunga delle due. */
 
+
+const parolaUno = prompt('Inserisci una prima parola a tua scelta');
+const parolaDue = prompt('Inserisci una seconda parola a tua scelta');
+// Se volessi fare un controllo però dovrò cambiare la variabile const in let e quindi:
+// let parolaUno, parolaDue;
+// do {
+//     parolaUno = prompt('Inserisci una prima parola a tua scelta');
+// } while (parolaUno == "" || parolaUno == "undefined" || !isNaN(parolaUno));
+
+// do {
+//     parolaDue = prompt('Inserisci una prima parola a tua scelta');
+// } while (parolaDue == "" || parolaDue == "undefined" || !isNaN(parolaDue));
+
+if (parolaUno.length == parolaDue.length){
+    document.getElementById('uno').innerHTML = 'La prima parola è: ' + parolaUno;
+    document.getElementById('due').innerHTML = 'La seconda parola è: ' + parolaDue;
+} else if (parolaUno.length > parolaDue.length){
+    document.getElementById('uno').innerHTML = 'La parola uno è la più lunga: ' + parolaUno;
+} else {
+    document.getElementById('due').innerHTML = 'La parola due è la più lunga: ' + parolaDue;
+}
 
 //---------------------------------------------------------------------------------------------------

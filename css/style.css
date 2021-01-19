@@ -1,24 +1,39 @@
+body {
+    background-color:rgba(23, 21, 124, 0.842);
+}
+
+div.parole {
+    background-color:rgba(255, 255, 255, 0.829);
+    font-size: 30px;
+    border-radius: 20px;
+    margin: 50px 30px 50px;
+    text-align: center;
+    padding: 30px;
+}
+
+div.colori {
+    display: flex;
+    justify-content: space-around;
+}
 
 #rosso {
     color: red;
-    background-color: pink;
-    height: 400px;
-    width: 400px;
-    border-radius: 50%;
+    background-color:rgba(255, 255, 255, 0.829);
+    height: 200px;
+    width: 45%;
+    border-radius: 20px;
     text-align: center;
-    line-height: 400px;
-    display: inline-block;
+    line-height: 200px;
     font-size: 40px;
 }
 
 #verde {
     color: green;
-    background-color: pink;
-    height: 400px;
-    width: 400px;
-    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.829);
+    height: 200px;
+    width: 45%;
+    border-radius: 20px;
     text-align: center;
-    line-height: 400px;
-    display: inline-block;
+    line-height: 200px;
     font-size: 40px;
 }
