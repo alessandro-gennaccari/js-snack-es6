@@ -45,21 +45,18 @@ for (let i = 0; i < 10; i++){
 }
 console.log(array);
 
-// Dichiaro le variabili pari e dispari, dentro la condizione perchè sono sicuro
-// che non mi serviranno i loro valori se non per stamparli in HTML;
+// Stampo i valori, se pari nel di verde altrimenti in quello con id rosso;
 for (let i = 0; i < array.length; i++){
     if (array[i] % 2 == 0){
-        const pari = array[i];
         document.getElementById('verde').innerHTML +=
         `
-        ${pari}
+        ${array[i]}
         `;
     } 
     else {
-        let dispari = array[i];
         document.getElementById('rosso').innerHTML +=
         `
-        ${dispari}
+        ${array[i]}
         `;
     }
 }
@@ -75,5 +72,6 @@ Dare la possibilità di inserire due parole.
 Verificare se le due parole hanno la stessa lunghezza.
 Se hanno la stessa lunghezza, stamparle entrambe altrimenti,
 stampare la più lunga delle due. */
+
 
 //---------------------------------------------------------------------------------------------------
