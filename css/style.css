@@ -1,0 +1,24 @@
+
+#rosso {
+    color: red;
+    background-color: pink;
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 400px;
+    display: inline-block;
+    font-size: 40px;
+}
+
+#verde {
+    color: green;
+    background-color: pink;
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 400px;
+    display: inline-block;
+    font-size: 40px;
+}
