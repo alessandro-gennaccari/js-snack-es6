@@ -26,7 +26,7 @@ const objects = [
 
 let pesoMinore = objects[0];
 for (let i = 1; i < objects.length; i++){
-    if (objects [i].peso < pesoMinore.peso){
+    if (objects[i].peso < pesoMinore.peso){
         pesoMinore = objects[i]
     }
 }
